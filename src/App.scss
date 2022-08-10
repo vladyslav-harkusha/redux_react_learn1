@@ -1,0 +1,22 @@
+.buttons {
+  height: 80vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+
+  &__button {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    border-color: wheat;
+    transition: color 0.2s;
+
+    &:hover {
+      color: wheat;
+    }
+  }
+}
