@@ -1,3 +1,3 @@
 # My training project
 
-[LINK](https://vladyslav-harkusha.github.io/react_drag-and-drop/)
+[LINK](https://vladyslav-harkusha.github.io/redux_react_learn1/)
