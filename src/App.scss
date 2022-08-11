@@ -2,13 +2,20 @@
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   height: 80vh;
   display: flex;
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
 
   &__cash {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 40px;
     color: brown;
+  }
+
+  &__container {
+    display: flex;
+    gap: 10px;
   }
 
   &__button {
@@ -23,5 +30,21 @@
     &:hover {
       color: wheat;
     }
+  }
+}
+
+.customers {
+  &__list {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  &__item {
+    color: darkblue;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid teal;
+    padding: 5px 10px;
+    margin-bottom: 5px;
   }
 }
