@@ -2,6 +2,7 @@ import './App.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCustomerAction, removeCustomerAction } from './store/customerReducer';
 import { addCashAction, getCashAction } from './store/cashReducer';
+import { fetchCustomers } from './asyncActions/customers';
 
 function App() {
   const dispatch = useDispatch();
@@ -38,6 +39,7 @@ function App() {
           <button onClick={() => addCash(+prompt())} className='buttons__button'>Add cash</button>
           <button onClick={() => getCash(+prompt())} className='buttons__button'>Get cash</button>
           <button onClick={() => addCustomer(prompt())} className='buttons__button'>Add customer</button>
+          <button onClick={() => dispatch(fetchCustomers())} className='buttons__button'>Get customers</button>
         </div>
 
         <div className="customers">
